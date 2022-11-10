@@ -1,15 +1,17 @@
 import React from 'react';
+import samplePosts from '../../libs/data';
 
 import './index.css';
 
 function Post({text, author, src, title, date, highlights, alt}) {
   return <article>
-<h3>{title}</h3>
+<h3>{title} <small>{date}</small></h3>
 <img src={src} alt={alt} />
-<p>{author}</p>
+<h4>{author}</h4>
 <p>{text}</p>
-<p>{date}</p>
-<p>{highlights}</p>
+{samplePosts.map(({highlights})=>{
+  return <li>{highlights}</li>
+})}
   </article>;
 }
 

@@ -77,6 +77,24 @@ const samplePosts = [
         'A pigeon with a spectacular green plumage stares thoughtfully into the distance.',
     },
   },
+  {
+    postId: 4,
+    title: 'A beautiful baby',
+    date: '16/10/22',
+    author: 'Iona Rose',
+    text: lorem.generateParagraphs(7),
+    highlights: [
+      lorem.generateWords(3),
+      lorem.generateWords(3),
+      lorem.generateWords(3),
+    ],
+    image: {
+      link:
+        'https://optimise2.assets-servd.host/steadfast-tern/production/baby-pigeons.jpg?w=1200&h=630&q=82&auto=format&fit=crop&dm=1629908765&s=1d5718a86636f2e7c4e4913d1312544f',
+      alt:
+        'A pigeon with a spectacular green plumage stares thoughtfully into the distance.',
+    },
+  },
 ];
 
 export default samplePosts;
